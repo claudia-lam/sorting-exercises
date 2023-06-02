@@ -4,14 +4,17 @@ function mergeSort(array) {
 
   // 1. divide - split array in half
     // find mid point
+    let middleIndex = //math
     // split array in half
+    let leftHalf = array.slice(0, middleIndex)
+    let rightHalf = array.slice(middleIndex, array.length -1)
 
 
   // 2. conquer - recursive halving until left with single items
-  // RECURSIVE CALL - halve subarrays until lengths are 1
-  let sortedLeft = mergeSort(left side) -- finishes first
-  let sortedRight = mergeSort(right side) -- finishes next
+  let sortedLeft = mergeSort(leftHalf) // -- finishes first
+  // wont hit next line till left is done
 
+  let sortedRight = mergeSort(rightHalf) // -- finishes next
   // 3. merge
   merge(sortedLeft, sortedRight);
 
